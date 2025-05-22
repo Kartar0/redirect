@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting</title>
-    <!-- This meta tag will redirect after 2 seconds -->
+    
+    <!-- Redirect after 2 seconds -->
     <meta http-equiv="refresh" content="2;url=https://facebook.com">
+    
+    <!-- Open Graph meta tags for Facebook preview -->
+    <meta property="og:title" content="Redirecting to Main Page">
+    <meta property="og:description" content="You are being redirected to the main site.">
+    <meta property="og:image" content="https://scitechdaily.com/images/Artificial-Intelligence-Robot-Thinking-Brain.jpg">
+    <meta property="og:url" content="https://your-main-link.com">
+    <meta property="og:type" content="website">
+
     <style>
         body {
             margin: 0;
@@ -13,8 +22,7 @@
             background-color: #ffffff;
         }
         .invisible-text {
-            /* This makes the text essentially invisible */
-            color: #ffffff; /* Same as background */
+            color: #ffffff;
             font-size: 1px;
             opacity: 0.01;
             position: absolute;
@@ -24,7 +32,6 @@
     </style>
 </head>
 <body>
-    <!-- This text is practically invisible due to the CSS styling -->
     <div class="invisible-text">redirected to main link</div>
 </body>
 </html>
